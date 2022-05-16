@@ -1,37 +1,81 @@
+/**
+ * @file    tempo.cpp
+ * @brief   Implementação da classe Tempo
+ * @author  Everton Cavalcante (everton.cavalcante@ufrn.br)
+ * @since   16/05/2022
+ * @date    16/05/2022
+ * @sa      tempo.h
+ */
+
+#include <iomanip>
+using std::setfill;
+using std::setw;
+
 #include "tempo.h"
 
+/** @brief Construtor padrão */
 Tempo::Tempo() {
     horas = 0;
     minutos = 0;
     segundos = 0;
 }
 
+/**
+ * @brief Construtor parametrizado
+ * @param h Valor para horas
+ * @param m Valor para minutos
+ * @param s Valor para segundos
+ */
 Tempo::Tempo(short h, short m, short s) {
     horas = h;
     minutos = m;
     segundos = s;
 }
 
+/**
+ * @brief Retorna a parte referente às horas
+ * @return Horas
+ */
 short Tempo::getHoras() {
     return horas;
 }
 
+/**
+ * @brief Modifica a parte referente às horas
+ * @param h Valor para horas
+ */
 void Tempo::setHoras(short h) {
         horas = h;
 }
 
+/**
+ * @brief Retorna a parte referente aos minutos
+ * @return Minutos
+ */
 short Tempo::getMinutos() {
     return minutos;
 }
 
+/**
+ * @brief Modifica a parte referente aos minutos
+ * @param m Valor para minutos
+ */
 void Tempo::setMinutos(short m) {
     minutos = m;
 }
 
+/**
+ * @brief Retorna a parte referente aos segundos
+ * @return Segundos
+ */
 short Tempo::getSegundos() {
     return segundos;
 }
 
+/**
+ * @brief Modifica a parte referente aos segundos
+ * @param s Valor para segundos
+ */
 void Tempo::setSegundos(short s) {
     segundos = s;
 }
@@ -58,7 +102,9 @@ Tempo Tempo::operator+(Tempo t) {
  * @return Referência para o <i>stream</i> de saída
  */
 ostream& operator<<(ostream& o, Tempo t) {
-    o << t.getHoras() << ":" << t.getMinutos() << ":" << t.getSegundos();
+    o << setfill('0') << setw(2) << t.getHoras() << ":";
+    o << setfill('0') << setw(2) << t.getMinutos() << ":";
+    o << setfill('0') << setw(2) << t.getSegundos();
     return o;
 }
 

@@ -1,23 +1,84 @@
+/**
+ * @file    tempo.h
+ * @brief   Definição da classe Tempo
+ * @author  Everton Cavalcante (everton.cavalcante@ufrn.br)
+ * @since   16/05/2022
+ * @date    16/05/2022
+ */
+
+#ifndef TEMPO_H
+#define TEMPO_H
+
 #include <istream>
 using std::istream;
 
 #include <ostream>
 using std::ostream;
 
+/**
+ * @class Tempo tempo.h "include/pessoa.h"
+ * @brief Classe que representa um instante de tempo
+ * @details Um instante de tempo é constituído de horas, minutos e segundos
+ */
 class Tempo {
     private:
+
+    /** @brief Parte referente às horas */
     short horas;
+
+    /** @brief Parte referente aos minutos */
     short minutos;
+
+    /** @brief Parte referente aos segundos */
     short segundos;
 
     public:
+    
+    /** @brief Construtor padrão */
     Tempo();
+
+    /**
+     * @brief Construtor parametrizado
+     * @param h Valor para horas
+     * @param m Valor para minutos
+     * @param s Valor para segundos
+     */
     Tempo(short h, short m, short s);
+
+    /**
+     * @brief Retorna a parte referente às horas
+     * @return Horas
+     */
     short getHoras();
+
+    /**
+     * @brief Modifica a parte referente às horas
+     * @param h Valor para horas
+     */
     void setHoras(short h);
+
+    /**
+     * @brief Retorna a parte referente aos minutos
+     * @return Minutos
+     */
     short getMinutos();
+
+    /**
+     * @brief Modifica a parte referente aos minutos
+     * @param m Valor para minutos
+     */
     void setMinutos(short m);
+
+    /**
+     * @brief Retorna a parte referente aos segundos
+     * @return Segundos
+     */
     short getSegundos();
+
+    /**
+     * @brief Modifica a parte referente aos segundos
+     * @param s Valor para segundos
+     */
     void setSegundos(short s);
 
     /**
@@ -48,3 +109,5 @@ class Tempo {
      */
     friend istream& operator>>(istream& i, Tempo& t);
 };
+
+#endif
