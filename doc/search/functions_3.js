@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['sethoras_0',['setHoras',['../class_tempo.html#ac236c9762578615ef03fb10b23278ce8',1,'Tempo']]],
+  ['setminutos_1',['setMinutos',['../class_tempo.html#a24a65261b596be60bdd7128202e0e884',1,'Tempo']]],
+  ['setsegundos_2',['setSegundos',['../class_tempo.html#ab7fad3c838cd1ec0fab741ca92538a3b',1,'Tempo']]]
+];
