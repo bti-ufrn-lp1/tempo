@@ -1,4 +1,4 @@
-# Calculadora
+# Tempo
 
 ## Sobre
 Este programa serve à demonstração do mecanismo de sobrecarga de operadores oferecido pela linguagem de programação C++ na forma utilizando uma classe que representa um instante de tempo.
