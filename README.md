@@ -1,7 +1,7 @@
 # Tempo
 
 ## Sobre
-Este programa serve à demonstração do mecanismo de sobrecarga de operadores oferecido pela linguagem de programação C++ na forma utilizando uma classe que representa um instante de tempo.
+Este programa serve à demonstração do mecanismo de sobrecarga de operadores oferecido pela linguagem de programação C++ utilizando uma classe que representa um instante de tempo.
 
 ## Estrutura do projeto
 Primando pela modularização, a definição e a implementação da classe `Tempo` está separada em um arquivo cabeçalho [`tempo.h`](include/tempo.h) e de corpo [`tempo.cpp`](src/tempo.cpp). O arquivo [`main.cpp`](src/main.cpp) correspondente à implementação da função principal do programa. Os arquivos deste projeto estão assim organizados de acordo com a seguinte estrutura:
