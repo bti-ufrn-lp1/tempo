@@ -8,7 +8,7 @@ endif()
 set(CMAKE_CXX_STANDARD 11)                      # Versão da linguagem
 
 # Nome do projeto
-project(calculadora VERSION 1.0 LANGUAGES CXX)
+project(tempo VERSION 1.0 LANGUAGES CXX)
 
 # Variáveis para diretórios
 set(INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
