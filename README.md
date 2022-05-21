@@ -37,7 +37,6 @@ No terminal do sistema operacional, insira os seguintes comandos para realizar o
  # Navegação para o diretório
  cd tempo
 ```
-Caso se queira utilizar o *makefile* escrito manualmente, insira o seguinte comando no terminal do sistema operacional para compilar o programa:
 
 Em seguida, insira os seguintes comandos no terminal do sistema operacional para gerar automaticamente o *makefile* e, em seguida, compilar o programa:
 
